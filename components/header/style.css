@@ -1,0 +1,9 @@
+.header-warp {
+    background-color: #ccc;
+    height: 300px;
+}
+.header-logo {
+    height: 100px;
+    line-height: 100px;
+    color: black;
+}

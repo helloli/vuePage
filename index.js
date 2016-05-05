@@ -14,6 +14,10 @@ require.config({
         name: 'text',
         location: './node_modules/text',
         main: 'text'
+    }, {
+        name: 'css',
+        location: './node_modules/require-css',
+        main: 'css.min'
     }]
 });
 
