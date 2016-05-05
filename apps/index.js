@@ -1,4 +1,4 @@
-define(['text!./view.html', '../components/header/index', 'jquery', 'vue'], function (_view, header, $, vue) {
+define(['text!./view.html', '../components/header/index', 'jquery', 'vue', 'css!./style.css'], function (_view, header, $, vue) {
     var app = new vue({
         el: 'body',
         replace: false,
