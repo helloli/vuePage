@@ -1,5 +1,4 @@
-define(['exports', 'text!./view.html', 'jquery', 'vue', 'css!./style.css'], function (exports, view, $, vue) {
-    var logo = 'TEST';
+define(['text!./view.html', 'jquery', 'vue', 'css!./style.css'], function (view, $, vue) {
     return {
         template: view,
         data: function () {
