@@ -8,7 +8,6 @@ define(['vue', './validator', 'css!./style.css'], function (Vue, validator) {
         var configs = validator.default,
             validate = this.validate,
             result = true;
-            console.log(validate, 'validate');
         //验证models
         var _models = validate,
             isArray = false;
@@ -25,12 +24,10 @@ define(['vue', './validator', 'css!./style.css'], function (Vue, validator) {
             if(typeof _validate !== 'undefined') {
                 //遍历绑定的model值
                 for(var v in _validate) {
-                    console.log(v, 'v');
                     var option = this.validateOption[model][v];
                     //进行验证校验
                     if (typeof configs[v] === 'function') {
                         this[model] = this[model]?this[model]:'';
-                        console.log(this[model],'this[model]');
                         var valide = !!configs[v](this[model], option);
                         this.$set('validate.' + model + '.' + v, valide);
                         if(!valide) result = false;
