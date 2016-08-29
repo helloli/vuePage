@@ -1,12 +1,14 @@
 require.config({
     paths: {
-
+        'bootstrap': './node_modules/bootstrap/dist/js/bootstrap.min',
+        'jQuery': './node_modules/jquery/dist/jquery.min'
     },
-    packages: [{
-        name: 'jquery',
-        location: './node_modules/jquery',
-        main: 'dist/jquery.min'
-    }, {
+    shim: {
+        'bootstrap': {
+            deps: ['jQuery'],
+        }
+    },
+    packages: [ {
         name: 'vue',
         location: './node_modules/vue',
         main: 'dist/vue.min'
